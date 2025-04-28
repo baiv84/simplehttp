@@ -10,6 +10,4 @@ COPY . .
 
 RUN go build -o simplehttp .
 
-EXPOSE 8082
-
 CMD ["./simplehttp"]
