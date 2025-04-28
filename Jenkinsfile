@@ -12,7 +12,7 @@ pipeline {
                 sh 'docker rm simplehttp'
                 sh 'docker rmi simplehttp'
                 sh 'docker build -t simplehttp .'
-                sh 'docker run -dit --name simplehttp -p 8082:8082 simplehttp'
+                sh 'docker run -dit --name simplehttp -p 18082:8082 simplehttp'
             }
         }
     }
